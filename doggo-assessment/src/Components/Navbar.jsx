@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Button } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <Box
@@ -13,7 +14,7 @@ const Navbar = () => {
       px={{md:"40px"}}
     >
       <Box>
-        <Button
+       <Link to="/"><Button
           pb="2px"
           w="80px"
           h="30px"
@@ -23,7 +24,7 @@ const Navbar = () => {
           rounded="xl"
         >
           Doggo
-        </Button>
+        </Button></Link> 
       </Box>
       <Box
         display="flex"
@@ -31,7 +32,7 @@ const Navbar = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <Button
+      <Link to="/list">  <Button
           pb="2px"
           w="80px"
           h="30px"
@@ -41,8 +42,8 @@ const Navbar = () => {
           rounded="xl"
         >
           List
-        </Button>
-        <Button
+        </Button></Link>
+       <Link to="/track"> <Button
           pb="2px"
           w="80px"
           h="30px"
@@ -52,7 +53,7 @@ const Navbar = () => {
           rounded="xl"
         >
           Track
-        </Button>
+        </Button></Link>
       </Box>
     </Box>
   );

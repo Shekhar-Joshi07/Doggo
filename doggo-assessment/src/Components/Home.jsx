@@ -5,13 +5,12 @@ import {
   Flex,
   Box,
   Text,
-  HStack,
   Grid,
-  GridItem,
+
 } from "@chakra-ui/react";
 import axios from "axios";
-import Navbar from "./Navbar";
-import DogModal from "./DogModal";
+// import DogModal from "./Dogmodal";
+import DogImageModal from "./DogImageModal";
 import dogImage from "../assets/dogArt.png";
 const Home = () => {
   const [breeds, setBreeds] = useState([]);
@@ -19,6 +18,7 @@ const Home = () => {
   const [images, setImages] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+
   //Fetching list of breeds
   useEffect(() => {
     axios
@@ -28,14 +28,14 @@ const Home = () => {
   }, []);
 
   // Fetching a list of random dog images on first render
-  useEffect(() => {
-    axios
-      .get("https://dog.ceo/api/breeds/image/random/15")
-      .then((response) => setImages(response.data.message))
-      .catch((error) => console.log(error));
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get("https://dog.ceo/api/breeds/image/random/30")
+  //     .then((response) => setImages(response.data.message))
+  //     .catch((error) => console.log(error));
+  // }, []);
 
-  // Fetching breed images when breed is selected
+  // Fetching breed images when breed is selected else random images will be display
 
   useEffect(() => {
     if (selectedBreed) {
@@ -45,7 +45,7 @@ const Home = () => {
         .catch((error) => console.log(error));
     } else {
       axios
-        .get("https://dog.ceo/api/breeds/image/random/15")
+        .get("https://dog.ceo/api/breeds/image/random/30")
         .then((response) => setImages(response.data.message))
         .catch((error) => console.log(error));
     }
@@ -70,7 +70,6 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
       <Flex
         p="4"
         gap="10px"
@@ -167,7 +166,7 @@ const Home = () => {
         ))}
       </Grid>
       {selectedImage && (
-        <DogModal
+        <DogImageModal
           isOpen={showModal}
           onClose={handleCloseModal}
           image={selectedImage}
