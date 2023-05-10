@@ -136,8 +136,9 @@ const Track = (props) => {
       <Text fontSize="xl">Please select a breed to track</Text>
     )}
   </Flex>
+  <Box border="5px solid #808080" w={{base:"90%",md:"50%"}} m="auto" p="20px">
       <LoadScript googleMapsApiKey={apiKey}>
-    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={6}>
+    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={6} >
       {markers.map((marker, index) => (
         <Marker
           key={index}
@@ -147,6 +148,7 @@ const Track = (props) => {
       ))}
     </GoogleMap>
   </LoadScript>
+  </Box>
 
   
 </>
