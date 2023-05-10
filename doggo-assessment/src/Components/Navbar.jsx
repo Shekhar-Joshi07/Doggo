@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Button } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 const Navbar = () => {
+ 
   return (
     <Box
       w="95%"
@@ -20,8 +21,13 @@ const Navbar = () => {
           h="30px"
           backgroundColor="#808080"
           color="white"
+          _focus={{
+            boxShadow:
+            '0 0 1px 3px rgba(0, 0, 0, .75), 0 1px 1px rgba(0, 0, 0, .15)',
+          }}
           variant="unstyled"
           rounded="xl"
+    
         >
           Doggo
         </Button></Link> 
@@ -40,6 +46,11 @@ const Navbar = () => {
           color="white"
           variant="unstyled"
           rounded="xl"
+          _focus={{
+            boxShadow:
+            '0 0 1px 3px rgba(0, 0, 0, .75), 0 1px 1px rgba(0, 0, 0, .15)',
+          }}
+        
         >
           List
         </Button></Link>
@@ -51,6 +62,11 @@ const Navbar = () => {
           color="white"
           variant="unstyled"
           rounded="xl"
+          _focus={{
+            boxShadow:
+            '0 0 1px 3px rgba(0, 0, 0, .75), 0 1px 1px rgba(0, 0, 0, .15)',
+          }}
+         
         >
           Track
         </Button></Link>

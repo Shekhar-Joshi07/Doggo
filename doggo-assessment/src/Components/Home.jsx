@@ -6,12 +6,11 @@ import {
   Box,
   Text,
   Grid,
-
 } from "@chakra-ui/react";
 import axios from "axios";
-// import DogModal from "./Dogmodal";
 import DogImageModal from "./DogImageModal";
 import dogImage from "../assets/dogArt.png";
+
 const Home = () => {
   const [breeds, setBreeds] = useState([]);
   const [selectedBreed, setSelectedBreed] = useState("");
@@ -19,7 +18,9 @@ const Home = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
+
   //Fetching list of breeds
+
   useEffect(() => {
     axios
       .get("https://dog.ceo/api/breeds/list/all")
@@ -27,13 +28,7 @@ const Home = () => {
       .catch((error) => console.log(error));
   }, []);
 
-  // Fetching a list of random dog images on first render
-  // useEffect(() => {
-  //   axios
-  //     .get("https://dog.ceo/api/breeds/image/random/30")
-  //     .then((response) => setImages(response.data.message))
-  //     .catch((error) => console.log(error));
-  // }, []);
+ 
 
   // Fetching breed images when breed is selected else random images will be display
 
@@ -54,6 +49,7 @@ const Home = () => {
   // Function to handle breed selection
   const handleBreedSelect = (breed) => {
     setSelectedBreed(breed);
+   
   };
 
   // Handle image selection
@@ -94,18 +90,28 @@ const Home = () => {
             w="150px"
             cursor="pointer"
             p="20px"
+             transition="all .4s ease-in-out"
+           _hover={{ transform: "scale(1.09)" }}
+            _focus={{
+              boxShadow:
+              '0 0 1px 5px rgba(0, 0, 0, .75), 0 1px 1px rgba(0, 0, 0, .15)',
+              transition: "box-shadow 0.2s ease-out",
+            }}
+             tabIndex={0}
             onClick={() => handleBreedSelect(breed)}
+            
+            
           >
-            <Text
-              w="100px"
-              h="100px"
-              color="white"
-              textAlign="center"
-              fontFamily="sans-serif"
-            >
-              <Image m="auto" w="70px" src={dogImage} />
-              {breed}
-            </Text>
+           <Text
+          w="100px"
+          h="100px"
+          color="white"
+          textAlign="center"
+          fontFamily="sans-serif"
+        >
+          <Image m="auto" w="70px" src={dogImage} />
+          {breed.charAt(0).toUpperCase() + breed.slice(1)}
+        </Text>
           </Box>
         ))}
       </Flex>
@@ -120,7 +126,7 @@ const Home = () => {
           mb="1rem"
           fontWeight="semibold"
         >
-          {selectedBreed} Images: Click any one to view full image
+          {selectedBreed.charAt(0).toUpperCase() + selectedBreed.slice(1)} Images: Click any one to view full image
         </Text>
       ) : (
         <Text
