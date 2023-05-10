@@ -1,73 +1,54 @@
-# Getting Started with Create React App
+<h1 align="center" id="title">Doggo App</h1> <h4 align="center">Frontend Assessment</h4>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"><img src="https://github.com/Shekhar-Joshi07/Doggo/assets/110104542/b582a0b6-e368-4cce-9687-0e22d2036dcf" alt="project-image" width="150" height="150/"></p>
+<hr/>
+<h2>🌐See Live here 👇</h2>
 
-## Available Scripts
+<h4>➡️ Vercel Link: https://doggo-assessment.vercel.app/</h4>
 
-In the project directory, you can run:
+## 💻:Tech Stack Used:
 
-### `npm start`
+<details>
+  <summary>Frontend</summary>
+  <ul>
+    <li><a href="https://#/">Javascript</a></li>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://chakra-ui.com/">Chakra UI</a></li>
+  </ul>
+</details>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<details>
+<summary>NPM Packages</summary>
+  <ul>
+    <li><a href="https://www.npmjs.com/package/react-zoom-pan-pinch">react-zoom-pan-pinch</a></li>
+    <li><a href="https://www.npmjs.com/package/axios">Axios</a></li>
+    <li><a href="https://www.npmjs.com/package/react-router-dom">react-router-dom</a></li>
+    <li><a href="https://www.npmjs.com/package/@react-google-maps/api">react-google-maps/api</a></li>
+  </ul>
+</details>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2>🛠️ Installation Steps:</h2>
 
-### `npm test`
+<p>1. Clone the repo</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone https://github.com/Shekhar-Joshi07/Doggo.git
+```
 
-### `npm run build`
+<p>2. After cloning install NPM packages</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm i --force
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p>3. View on browser at localhost:3000</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm start
+```
 
-### `npm run eject`
+<h2>Special Thanks 😊</h2>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p>Thanks Tracknerd for giving me this opportunity. </p>
 
 
-//AIzaSyCXKaXdTFIiNMvjr1Cn2uRNCqqfP4l0GWY
