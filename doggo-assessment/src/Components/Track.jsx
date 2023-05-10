@@ -12,7 +12,7 @@ const containerStyle = {
   height: "calc(100vh - 60px)",
 };
 
-const center = {
+const center = { // initial focused area
   lat: 12.9716,
   lng: 77.5946,
 };
